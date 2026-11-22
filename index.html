@@ -121,6 +121,8 @@ a.nm{color:inherit;text-decoration:none;border-bottom:2px dotted #c3cad8;cursor:
 .src{font-size:11.5px;color:var(--sub);margin-top:10px!important;line-height:1.7}
 .src a{font-weight:700}
 .gt{max-width:420px}.gt td{padding:8px}
+.wds{display:grid;gap:8px}.wd{background:#f8f9fc;border-radius:14px;padding:10px 14px;display:grid;grid-template-columns:180px 1fr;gap:10px;align-items:start}.wd b{color:var(--acc)}
+@media (max-width:700px){.wd{grid-template-columns:1fr;gap:2px}}
 .inv{background:#f8f9fc;border-radius:18px;padding:14px;margin:10px 0}
 .ih{display:flex;align-items:center;gap:10px;margin-bottom:4px}
 @media (max-width:700px){
@@ -202,7 +204,7 @@ a.nm{color:inherit;text-decoration:none;border-bottom:2px dotted #c3cad8;cursor:
  <div class="stat hero" style="margin-bottom:16px"><span>はじめての人へ</span><b style="font-size:26px;line-height:1.4">スイングトレード<br>やさしいガイド</b>
   <div style="margin-top:8px;font-size:13px;line-height:1.7;position:relative;z-index:1">上から順に読めば、練習の始め方・チャートの見方・負けないための考え方がわかります。項目を押すと開きます。</div></div>
 
- <details class="gd" open><summary><span class="em">🔰</span>スイングトレードってなに?</summary><div class="gb">
+ <details class="gd"><summary><span class="em">🔰</span>スイングトレードってなに?</summary><div class="gb">
   <p>株を<b>数日〜数週間</b>持って、値上がりした所で売るやり方です。1日中画面を見るデイトレードと違い、<b>夜に調べて注文し、昼は仕事</b>という人に向いています。</p>
   <div class="gcards">
    <div><b>🌙 夜</b><br>チャートを見て、買う・売るを決めて注文を出す</div>
@@ -213,6 +215,10 @@ a.nm{color:inherit;text-decoration:none;border-bottom:2px dotted #c3cad8;cursor:
   <p class="small">取引時間は 9:00〜11:30、12:30〜15:30(東証、2024年11月から15:30まで)。</p>
  </div></details>
 
+ <details class="gd" open><summary><span class="em">📖</span>言葉の意味(建てる・返済など)</summary><div class="gb">
+  <div class="warn">ひとことで言うと: <b>現物</b>は「買う → 売る」、<b>信用取引</b>は「建てる → 返済する」。信用買いなら<b>建てる=買う、返済=売る</b>。空売りなら<b>建てる=先に売る、返済=買い戻す</b>です。</div>
+  <div class="wds"><div class="wd"><b>約定(やくじょう)</b><span>注文が成立して、実際に売り買いができたこと</span></div><div class="wd"><b>寄付(よりつき)</b><span>朝9:00に、その日最初に付く値段(始値)。夜に出した注文はこの値段で約定します</span></div><div class="wd"><b>引け(ひけ)</b><span>15:30の、その日最後の値段(終値)。「引け」注文はこの値段で売り買いします</span></div><div class="wd"><b>成行(なりゆき)</b><span>値段を決めずに「いくらでもいいから売る/買う」注文</span></div><div class="wd"><b>指値(さしね)</b><span>「この値段以下なら買う」「この値段以上なら売る」と値段を決める注文</span></div><div class="wd"><b>逆指値(ぎゃくさしね)</b><span>「この値段まで下がったら売る」という注文。損切りを自動でするのに使います</span></div><div class="wd"><b>損切り</b><span>損が出ている株を売って、それ以上の損を止めること</span></div><div class="wd"><b>利確(りかく)</b><span>利益が出ている株を売って、利益を確定すること</span></div><div class="wd"><b>含み損・含み益</b><span>まだ売っていない株の、今の値段で計算した損や得</span></div><div class="wd"><b>塩漬け</b><span>下がった株を売れずに、ずっと持ち続けてしまうこと</span></div><div class="wd"><b>ナンピン</b><span>下がった株を買い増して、平均の買値を下げること</span></div><div class="wd"><b>信用取引</b><span>証券会社からお金や株を借りて売り買いすること。保証金の約3.3倍まで取引できます</span></div><div class="wd"><b>建てる(新規建て)</b><span>信用取引で、新しく売り買いを始めること。現物の「買う」にあたります</span></div><div class="wd"><b>買建(かいだて)・信用買い</b><span>お金を借りて株を買うこと。株価が上がると利益</span></div><div class="wd"><b>売建(うりだて)・空売り</b><span>株を借りて先に売ること。株価が下がると利益</span></div><div class="wd"><b>建玉(たてぎょく)</b><span>信用取引で、まだ決済していない取引のこと(持っている信用の株)</span></div><div class="wd"><b>返済</b><span>信用取引を終わらせること。信用買いなら売って、空売りなら買い戻して、借りたお金や株を返します。現物の「売る」にあたります</span></div><div class="wd"><b>保証金</b><span>信用取引のために証券会社に預けるお金(最低30万円)</span></div><div class="wd"><b>維持率</b><span>保証金が、建玉の金額の何%あるか。20%を下回ると追証</span></div><div class="wd"><b>追証(おいしょう)</b><span>保証金が足りなくなった時に求められる追加の入金</span></div><div class="wd"><b>陽線・陰線</b><span>ローソク足で、その日に上がった日が陽線、下がった日が陰線</span></div><div class="wd"><b>出来高(できだか)</b><span>その日に売り買いされた株の数</span></div></div>
+ </div></details>
  <details class="gd"><summary><span class="em">📱</span>このアプリでの練習のしかた</summary><div class="gb">
   <ol class="steps">
    <li><b>注文の方式を選ぶ</b> … 40万円なら、まずは「かぶミニ(1株から)」がおすすめ。100株単位だと買える銘柄が少なくなります</li>
